@@ -40,13 +40,13 @@ class Question {
 
   // FIXME: Implement async / await
   static async Print(id){
-    setTimeout(function(){
+
     const question = await Question.Find(id)
-    return new Promise(function(resolve){
+    
     console.log("\n")
     console.log(question.content)
     console.log("\n")
-  }), 1500)
+  }
 }
 
 Question._All = [
